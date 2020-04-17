@@ -6,21 +6,20 @@
     "variables": {},
     "resources": [
         {
-            {
-                "name": "storageaccount1",
-                "type": "Microsoft.Storage/storageAccounts",
-                "apiVersion": "2019-06-01",
-                "tags": {
-                    "displayName": "storageaccount1"
-                },
-                "location": "[resourceGroup().location]",
-                "kind": "StorageV2",
-                "sku": {
-                   "name": "Standard_LRS",
-                   "tier": "Standard"
-                 }
+            "name": "storageaccount1",
+            "type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2019-06-01",
+            "tags": {
+                "displayName": "storageaccount1"
+            },
+            "location": "[resourceGroup().location]",
+            "kind": "StorageV2",
+            "sku": {
+               "name": "Standard_LRS",
+                "tier": "Standard"
             }
         }
+
     ],
     "outputs": {}
 }
